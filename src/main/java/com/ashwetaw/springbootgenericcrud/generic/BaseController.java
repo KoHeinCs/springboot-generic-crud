@@ -30,6 +30,7 @@ public abstract class BaseController<D, ID extends Serializable> {
     }
 
     @PostMapping(update)
+    @Operation(summary = "Request body's id will be ignored by system")
     private ResponseEntity<Object> update(@PathVariable ID id, @RequestBody D dto) throws ApplicationException {
         return ResponseHandler.createHttpResponse(baseService.update(id, dto), "Entity was updated successfully ", HttpStatus.ACCEPTED);
     }
