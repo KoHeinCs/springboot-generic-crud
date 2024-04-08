@@ -25,7 +25,7 @@ public class ExceptionHandling {
 
     @ExceptionHandler(NotFoundException.class)
     public ResponseEntity<Object> notFoundException(NotFoundException exception){
-        log.error("not found exception happen! ",exception.getMessage());
+        log.warn("not found exception happen! ",exception.getMessage());
         return ResponseHandler.createHttpResponse(exception.getMessage(),HttpStatus.NOT_FOUND);
     }
 

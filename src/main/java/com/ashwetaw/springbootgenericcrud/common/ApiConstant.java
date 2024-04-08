@@ -17,5 +17,8 @@ public class ApiConstant {
     /**  rest api for department **/
     public static final String  department = endPoint+"/department";
 
+    /**  rest api for country **/
+    public static final String  country = endPoint+"/country";
+
 
 }
