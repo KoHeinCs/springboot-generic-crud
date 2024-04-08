@@ -27,15 +27,6 @@ public class Department {
     private String phone;
 
 
-    public Department() {
-    }
-
-    public Department(String name, String description, String email, String phone, String address) {
-        this.name = name;
-        this.description = description;
-        this.email = email;
-        this.phone = phone;
-    }
-
+    public Department() {}
 
 }
