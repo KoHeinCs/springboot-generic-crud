@@ -46,10 +46,6 @@ public abstract class BaseService<D, E, ID extends Serializable> {
 
     }
 
-    public void delete(D dto) {
-        crudRepo.delete(baseMapper.toEntity(dto));
-    }
-
     public D save(D dto) {
         E entity = crudRepo.save(baseMapper.toEntity(dto));
         return baseMapper.toDTO(entity);
